@@ -16,4 +16,9 @@ public class Operations {
     static double power(double a, double b){
         return Math.pow(a, b);
     }
+
+    static double root(double a, double b){
+        return Math.pow(b, 1 / a);
+    }
+
 }
