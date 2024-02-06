@@ -1,7 +1,7 @@
 package Calcuation;
 
 public class Operations {
-    public static Double addition(double a, double b){
+    static Double addition(double a, double b){
         return a + b;
     }
     static double subtraction(double a, double b){

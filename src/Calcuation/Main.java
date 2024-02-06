@@ -30,12 +30,15 @@ public class Main {
         operations.add(splitMathsEntered[1]);
         numbers.add(Double.parseDouble(splitMathsEntered[2]));
 
-        if (splitMathsEntered.length > 3) {
+        if (splitMathsEntered.length > 3 && splitMathsEntered.length <= 5) {
             methods.add(operators.get(splitMathsEntered[3]));
             operations.add(splitMathsEntered[3]);
             numbers.add(Double.parseDouble(splitMathsEntered[4]));
         }
-
-        System.out.println(Calculate.calculate(numbers, methods, operations));
+        else {
+            System.out.println("TOO MUCH MATHS!!!!!!");
+            return;
+        }
+        System.out.printf("Result: %.2f", Calculate.calculate(numbers, methods, operations));
     }
 }

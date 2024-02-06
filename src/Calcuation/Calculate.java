@@ -10,6 +10,7 @@ public class Calculate {
         if (methods.size() < 2) {
             return methods.getFirst().apply(numbers.getFirst(), numbers.get(2));
         }
+
         double temp;
         if ((operators.getLast().equals("*") || operators.getLast().equals("/")) && (operators.getFirst().equals("+") || operators.getFirst().equals("-"))){
             temp = methods.getLast().apply(numbers.get(1), numbers.get(2));
