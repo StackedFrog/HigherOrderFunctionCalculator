@@ -1,6 +1,6 @@
 package Calcuation;
 
-public class Operations {
+public class Operations {                                      // define all the operator's methods
     static Double addition(double a, double b){
         return a + b;
     }
@@ -16,9 +16,7 @@ public class Operations {
     static double power(double a, double b){
         return Math.pow(a, b);
     }
-
     static double root(double a, double b){
         return Math.pow(b, 1 / a);
     }
-
 }
